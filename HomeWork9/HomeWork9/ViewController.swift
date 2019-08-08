@@ -138,10 +138,15 @@ class ViewController: UIViewController
             print("TypeOfCoffee: \(self.typeOfCoffee.titleForSegment(at: order.typeOfCoffee)!), size: \(self.sizeSegmentControl.titleForSegment(at: order.size)!) , Sugar: \(order.sugar) mg, MyOwnCup: \(order.switchState)")
             
             
+            let next:SecondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+            self.navigationController?.pushViewController(next, animated: true)
             
-        
+            
+          
             
 
+
+            
         }
         let no = UIAlertAction(title: "Нет", style: .cancel) { _ in
             print("Cancel")
