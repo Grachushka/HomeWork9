@@ -137,7 +137,7 @@ class ViewController: UIViewController
         let yes = UIAlertAction(title: "Да", style: .default) { _ in
             print("TypeOfCoffee: \(self.typeOfCoffee.titleForSegment(at: order.typeOfCoffee)!), size: \(self.sizeSegmentControl.titleForSegment(at: order.size)!) , Sugar: \(order.sugar) mg, MyOwnCup: \(order.switchState)")
             
-            prin
+            
             
         
             
